@@ -23,4 +23,4 @@ Open http://localhost:3000 in your browser.
 
 ## 📧 Contact
 LinkedIn: linkedin.com/in/makhafid
-#🚀 Built with ❤️ by Abdul
+#🚀 Built with ❤️ by 0xmakhafid
