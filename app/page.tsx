@@ -141,6 +141,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* education Section */}
+      <section id="education" className="container py-24 px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">Education</h2>
+        </motion.div>
+      
+        <div className="flex flex-col items-center gap-6">
+          <motion.div
+            key="education-1"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="w-full max-w-lg"
+          >
+            <Card className="bg-background/50 backdrop-blur-md hover:bg-background/80 transition-all duration-300 hover:shadow-lg border border-border/30 rounded-lg p-6 flex flex-col items-center text-center">
+              <CardHeader className="flex flex-col items-center">
+                <CardTitle className="flex items-center text-lg font-semibold">
+                  <GraduationCap className="h-6 w-6 mr-3 text-primary" />
+                  Bachelor of Information Systems
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <p className="text-sm text-muted-foreground">Muria Kudus University</p>
+                <p className="text-sm font-medium">2025</p>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+
+
+
       {/* Certificates Section */}
       <section id="certificates" className="container py-24 px-4">
         <motion.div
@@ -149,11 +188,14 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Certifications & Courses</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            Certifications & Courses
+          </h2>
           <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
             Professional qualifications and continuous learning achievements
           </p>
         </motion.div>
+      
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certificates.map((cert, index) => (
             <motion.div
@@ -167,11 +209,11 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
                     {cert.type === "professional" ? (
-                      <Award className="h-5 w-5 mr-2 text-primary" />
+                      <Award className="h-5 w-5 mr-2 text-primary flex-shrink-0" />
                     ) : (
-                      <GraduationCap className="h-5 w-5 mr-2 text-primary" />
+                      <GraduationCap className="h-5 w-5 mr-2 text-primary flex-shrink-0" />
                     )}
-                    {cert.name}
+                    <span className="flex-1">{cert.name}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -183,6 +225,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="container py-24 px-4 text-center relative">
