@@ -15,7 +15,7 @@ Personal portfolio showcasing expertise in **Software Development, AI Integratio
 - **Deployment:** Vercel  
 
 ## 📂 Installation  
-git clone https://github.com/username/portfolio.git
+git clone https://github.com/0xmakhafid/myportfolio.git
 cd myportfolio
 npm install
 npm run dev
