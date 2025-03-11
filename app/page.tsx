@@ -43,7 +43,7 @@ const certificates = [
   { id: 1, name: "Advanced SQL", issuer: "Kaggle", year: 2025, type: "course" },
   {
     id: 2,
-    name: "Analis Data Excel",
+    name: "Sertifikat Analis Data Excel",
     issuer: "Microsoft",
     year: 2025,
     type: "professional",
@@ -57,7 +57,7 @@ const certificates = [
     type: "course",
   },
   { id: 5, name: "The Data Science of Healthcare, Medicine, and Public Health", issuer: "Linkedin Learning", year: 2025, type: "course" },
-  { id: 6, name: "Digital Advertising Certifiend", issuer: "HubSpot", year: 2025, type: "professional" },
+  { id: 6, name: "Digital Advertising certified", issuer: "HubSpot", year: 2025, type: "professional" },
 ]
 
 export default function Home() {
