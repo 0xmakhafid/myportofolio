@@ -203,7 +203,7 @@ export default function Home() {
             </div>
             <span className="text-sm group-hover:text-primary transition-colors">LinkedIn</span>
           </Link>
-          <Link href="https://wa.me/0831489664872" target="_blank" className="group flex flex-col items-center">
+          <Link href="https://wa.me/62831489664872" target="_blank" className="group flex flex-col items-center">
             <div className="p-4 rounded-full bg-background/50 backdrop-blur-sm transition-all group-hover:scale-110 group-hover:bg-primary/10 mb-2">
               <WhatsApp className="h-8 w-8 text-primary" />
             </div>
