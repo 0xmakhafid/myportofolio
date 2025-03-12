@@ -75,7 +75,7 @@ export default function Home() {
           Muhammad Abdul Khafid
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-10 text-center mx-auto">
-          IT Professional | Software Development | AI Integration | Data Analysis
+          IT Professional | DevOps Engineer | AI Integration | Data Analysis
         </p>
           <Button
             size="lg"
