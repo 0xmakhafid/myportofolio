@@ -36,7 +36,21 @@ const projects = [
     description: "Analisis visual untuk memahami pola penyebaran kasus COVID-19 berdasarkan provinsi.",
     image: "/covid_450x800.jpg",
     link: "https://medium.com/@makhafid/sebaran-kasus-covid-19-di-indonesia-berdasarkan-provinsi-019b82c1918d",
+  },  
+  {
+    id: 5,
+    title: "Playful Error Pages: Interactive Error Pages with Games",
+    description: "An open-source collection of interactive error pages with a jumping game, inspired by the Google Chrome dinosaur game during offline mode. Easily customizable for your own projects.",
+    image: "/error_pages.gif",
+    link: "https://github.com/0xmakhafid/playful-errorpages-ui"
   },
+  {
+  id: 6,
+  title: "Web Portfolio: Next.js with ShadCN UI",
+  description: "A sleek and modern web portfolio built using Next.js and ShadCN UI. Showcases professional projects and skills with a clean, responsive design.",
+  image: "/portfolio.jpg",
+  link: "https://github.com/0xmakhafid/myportofolio"
+},
 ]
 
 const certificates = [
