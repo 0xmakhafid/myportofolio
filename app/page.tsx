@@ -185,7 +185,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-sm text-muted-foreground">Muria Kudus University</p>
-                <p className="text-sm font-medium">2025</p>
+                <p className="text-sm font-medium">Wisuda 2025</p>
               </CardContent>
             </Card>
           </motion.div>
