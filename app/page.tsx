@@ -17,13 +17,6 @@ const projects = [
     link: "https://open.substack.com/pub/makhafid/p/membangun-website-profil-sekolah?r=4qh0pz&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
   },  
   {
-    id: 7,
-    title: "Optimasi Performa Website: Raih Skor 100/100/96 Berkat Perbaikan Teknis,
-    description: "Hasil ini membuktikan kemampuan saya dalam meningkatkan kualitas dan standar web secara menyeluruh.",
-    image: "/optimasi-web.jpg",
-    link: "/optimasi-masahmadsaidkudus.html",
-  },
-  {
     id: 2,
     title: "Sistem PPDB Online - MA Salafiyah Ahmad Said Kudus",
     description: "Platform digital untuk proses Penerimaan Peserta Didik Baru (PPDB) di MA Salafiyah Ahmad Said Kudus, memudahkan pendaftaran online bagi calon siswa.",
@@ -58,6 +51,13 @@ const projects = [
   image: "/portfolio.jpg",
   link: "https://github.com/0xmakhafid/myportofolio"
 },
+    {
+    id: 7,
+    title: "Optimasi Performa Website: Raih Skor 100/100/96 Berkat Perbaikan Teknis,
+    description: "Hasil ini membuktikan kemampuan saya dalam meningkatkan kualitas dan standar web secara menyeluruh.",
+    image: "/optimasi-web.jpg",
+    link: "https://heikhafid.my.id/optimasi_masahmadsaidkudus.html",
+  },
 ]
 
 const certificates = [
