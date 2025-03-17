@@ -140,28 +140,14 @@ export default function Home() {
         transition={{ duration: 0.5, delay: index * 0.1 }}
         viewport={{ once: true }}
       >
-        <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl border-none bg-background/50 backdrop-blur-sm hover:bg-background/80 relative">
-          {/* Gradient Border Animation */}
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-            initial={{ x: "-100%" }}
-            whileHover={{ x: "100%" }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-          />
+        <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl border-none bg-background/50 backdrop-blur-sm hover:bg-background/80">
           <div className="relative h-[225px] w-full overflow-hidden">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src={project.image || "/placeholder.svg"}
-                alt={project.title}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-            </motion.div>
+            <Image
+              src={project.image || "/placeholder.svg"}
+              alt={project.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
           </div>
           <CardHeader>
             <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">
@@ -174,19 +160,13 @@ export default function Home() {
           <CardFooter>
             <Button
               variant="ghost"
-              className="w-full group rounded-full hover:bg-primary/10 transition-colors duration-300 relative overflow-hidden"
+              className="w-full group rounded-full hover:bg-primary/10 transition-colors duration-300"
+              asChild
             >
-              {/* Button Hover Effect */}
-              <motion.span
-                className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                initial={{ scale: 0 }}
-                whileHover={{ scale: 1 }}
-                transition={{ duration: 0.3 }}
-              />
               <Link href={project.link} target="_blank">
-                 Explore Project
-                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 duration-300" />
-               </Link>
+                Explore Project
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 duration-300" />
+              </Link>
             </Button>
           </CardFooter>
         </Card>
