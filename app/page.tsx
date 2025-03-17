@@ -15,6 +15,13 @@ const projects = [
     description: "Website profil resmi untuk MA Salafiyah Ahmad Said Kudus, menampilkan informasi sekolah, galeri dan prestasi.",
     image: "/masprofile_450x800.jpg",
     link: "https://open.substack.com/pub/makhafid/p/membangun-website-profil-sekolah?r=4qh0pz&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+  },  
+  {
+    id: 7,
+    title: "Optimasi Performa Website: Raih Skor 100/100/96 Berkat Perbaikan Teknis,
+    description: "Hasil ini membuktikan kemampuan saya dalam meningkatkan kualitas dan standar web secara menyeluruh.",
+    image: "/optimasi-web.jpg",
+    link: "/optimasi-masahmadsaidkudus.html",
   },
   {
     id: 2,
