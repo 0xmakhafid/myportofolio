@@ -120,54 +120,60 @@ export default function Home() {
 
       {/* Portfolio Section */}
       <section id="portfolio" className="container py-24 px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Portfolio</h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-            Innovative solutions for complex challenges
-          </p>
-        </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}
+  >
+    <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Portfolio</h2>
+    <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+      Innovative solutions for complex challenges
+    </p>
+  </motion.div>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {projects.map((project, index) => (
+      <motion.div
+        key={project.id}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: index * 0.1 }}
+        viewport={{ once: true }}
+      >
+        <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl border-none bg-background/50 backdrop-blur-sm hover:bg-background/80">
+          <div className="relative h-[225px] w-full overflow-hidden">
+            <Image
+              src={project.image || "/placeholder.svg"}
+              alt={project.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <CardHeader>
+            <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">
+              {project.title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground">{project.description}</p>
+          </CardContent>
+          <CardFooter>
+            <Button
+              variant="ghost"
+              className="w-full group rounded-full hover:bg-primary/10 transition-colors duration-300"
+              asChild
             >
-              <Card className="group overflow-hidden transition-all duration-300 hover:shadow-xl border-none bg-background/50 backdrop-blur-sm hover:bg-background/80">
-                <div className="relative h-[225px] w-full overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">{project.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="ghost" className="w-full group rounded-full hover:bg-primary/10" asChild>
-                    <Link href={project.link} target="_blank">
-                      Explore Project
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                </CardFooter>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
-      </section>
+              <Link href={project.link} target="_blank">
+                Explore Project
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 duration-300" />
+              </Link>
+            </Button>
+          </CardFooter>
+        </Card>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       {/* education Section */}
       <section id="education" className="container py-24 px-4">
