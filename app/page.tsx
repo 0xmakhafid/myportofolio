@@ -183,10 +183,10 @@ export default function Home() {
                 whileHover={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
               />
-              <Link href={project.link} target="_blank" className="relative z-10">
-                Explore Project
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 duration-300" />
-              </Link>
+              <Link href={project.link} target="_blank">
+                 Explore Project
+                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1 duration-300" />
+               </Link>
             </Button>
           </CardFooter>
         </Card>
