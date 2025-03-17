@@ -15,13 +15,6 @@ const projects = [
     description: "Website profil resmi untuk MA Salafiyah Ahmad Said Kudus, menampilkan informasi sekolah, galeri dan prestasi.",
     image: "/masprofile_450x800.jpg",
     link: "https://open.substack.com/pub/makhafid/p/membangun-website-profil-sekolah?r=4qh0pz&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
-  },  
-      {
-    id: 7,
-    title: "Optimasi Performa Website: Raih Skor 100/100/96 Berkat Perbaikan Teknis",
-    description: "Hasil ini membuktikan kemampuan saya dalam meningkatkan kualitas dan standar web secara menyeluruh.",
-    image: "/optimasiweb.jpg",
-    link: "/optimasi_masahmadsaidkudus.html",
   },
   {
     id: 2,
@@ -52,12 +45,26 @@ const projects = [
     link: "https://github.com/0xmakhafid/playful-errorpages-ui"
   },
   {
-  id: 6,
-  title: "Web Portfolio: Next.js with ShadCN UI",
-  description: "A sleek and modern web portfolio built using Next.js and ShadCN UI. Showcases professional projects and skills with a clean, responsive design.",
-  image: "/portfolio.jpg",
-  link: "https://github.com/0xmakhafid/myportofolio"
-},
+    id: 6,
+    title: "Web Portfolio: Next.js with ShadCN UI",
+    description: "A sleek and modern web portfolio built using Next.js and ShadCN UI. Showcases professional projects and skills with a clean, responsive design.",
+    image: "/portfolio.jpg",
+    link: "https://github.com/0xmakhafid/myportofolio"
+  },  
+    {
+    id: 7,
+    title: "Optimasi Performa Website: Raih Skor 100/100/96 Berkat Perbaikan Teknis",
+    description: "Hasil ini membuktikan kemampuan saya dalam meningkatkan kualitas dan standar web secara menyeluruh.",
+    image: "/optimasiweb.jpg",
+    link: "/optimasi_masahmadsaidkudus.html",
+  },
+  {
+    id: 8,
+    title: "CMS Headless Ringan REST API JSON dan UI Admin untuk Manajemen Konten",
+    description: "Membangun Headless CMS ringan untuk mengelola postingan website dengan REST API dan dashboard admin. Cocok untuk website dinamis dan integrasi lintas platform.",
+    image: "/cmsheadless.jpg",
+    link: "https://medium.com/@makhafid/sistem-cms-dinamis-dengan-rest-api-manajemen-konten-via-ui-admin-3c679526c7ba",
+  },
 ]
 
 const certificates = [
