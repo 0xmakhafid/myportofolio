@@ -62,7 +62,7 @@ const projects = [
     id: 8,
     title: "CMS Headless Ringan REST API JSON dan UI Admin untuk Manajemen Konten",
     description: "Membangun Headless CMS ringan untuk mengelola postingan website dengan REST API dan dashboard admin. Cocok untuk website dinamis dan integrasi lintas platform.",
-    image: "/cmsheadless.jpg",
+    image: "/cmsproject.jpg",
     link: "https://medium.com/@makhafid/sistem-cms-dinamis-dengan-rest-api-manajemen-konten-via-ui-admin-3c679526c7ba",
   },
 ]
