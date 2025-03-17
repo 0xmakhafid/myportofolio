@@ -20,7 +20,7 @@ const projects = [
     id: 7,
     title: "Optimasi Performa Website: Raih Skor 100/100/96 Berkat Perbaikan Teknis",
     description: "Hasil ini membuktikan kemampuan saya dalam meningkatkan kualitas dan standar web secara menyeluruh.",
-    image: "/optimasi-web.jpg",
+    image: "/optimasiweb.jpg",
     link: "/optimasi_masahmadsaidkudus.html",
   },
   {
